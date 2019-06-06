@@ -1,8 +1,11 @@
 <template>
    <div class="body">
+      <!-- NAVBAR COMPONENT -->
       <div id="header" class="nav-bar-shadow">
          <app-nav :showTopMenu="showTopMenu" :showLowerMenu="showLowerMenu"></app-nav>
       </div>
+
+      <!-- BANNER WITH MENU HERE -->
       <div class="row banner-image">
          <div class="banner-menu">
             <div>
@@ -17,6 +20,7 @@
          </div>
       </div>
 
+      <!-- LOWER MENU -->
       <div id="lowerMenuID" class="row lowermenu">
          <nuxt-link to="/" class="col lower-menu-item"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;Shopping Mall</nuxt-link>
          <nuxt-link to="/" class="col lower-menu-item"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Every Collection</nuxt-link>
@@ -25,6 +29,8 @@
          <nuxt-link to="/" class="col lower-menu-item"><i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;Groceries</nuxt-link>
       </div>
 
+
+      <!-- PLACEHOLDER ITEMS TO FILL THE PAGE NOT RESPONSIVE YET -->
       <div class="row lowermenu">
          <div class="col-4" style="margin-bottom:10px;" v-for="(n,index) in 12" :key="index">
             <div class="card" style="width: 18rem;">
