@@ -1,7 +1,7 @@
 <template>
    <div class="body">
       <div id="header" class="nav-bar-shadow">
-         <app-nav></app-nav>
+         <app-nav :showTopMenu="showTopMenu" :showLowerMenu="showLowerMenu"></app-nav>
       </div>
       <div class="row banner-image">
          <div class="banner-menu">
@@ -45,6 +45,12 @@ export default {
    components: {
       "app-nav": Nav
    },
+   data(){
+      return{
+         showTopMenu : true,
+         showLowerMenu : false
+      }
+   },
    methods:{
       headerScroll : function(){
          
@@ -59,8 +65,8 @@ export default {
       };
 
       var header = document.getElementById("header");
-      var upperMenuID = document.getElementById("upperMenuID");
-      var lowerMenuNav = document.getElementById("lowerMenuNav");
+      // var upperMenuID = document.getElementById("upperMenuID");
+      // var lowerMenuNav = document.getElementById("lowerMenuNav");
       var lowerMenuID = document.getElementById("lowerMenuID");
       var sticktotop = header.offsetTop;
       var lowerMenuPos = lowerMenuID.offsetTop;
@@ -70,6 +76,7 @@ export default {
        *  to display and hide the nav bar menus 
        *    and also display navbar always at top
        */
+      self = this;
       function scrollFunc() {
          if (window.pageYOffset > sticktotop) {
             header.classList.add("sticktotop");
@@ -77,15 +84,21 @@ export default {
             header.classList.remove("sticktotop");
          }
          if(window.pageYOffset > lowerMenuPos){
-            upperMenuID.classList.add("hide-Upper-Menu");
+            // upperMenuID.classList.add("hide-Upper-Menu");
+            self.showTopMenu = false;
+            console.log(self.showTopMenu);
+            
          }else{
-            upperMenuID.classList.remove("hide-Upper-Menu");
+            self.showTopMenu=true;
+            // upperMenuID.classList.remove("hide-Upper-Menu");
          }
          if(window.pageYOffset > lowerMenuPos){
-            lowerMenuNav.classList.remove("hide-lower-at-first");
+            // lowerMenuNav.classList.remove("hide-lower-at-first");
+            self.showLowerMenu = true;
          }
          else{
-            lowerMenuNav.classList.add("hide-lower-at-first");
+            // lowerMenuNav.classList.add("hide-lower-at-first");
+            self.showLowerMenu = false;
          }
       }
    }
