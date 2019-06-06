@@ -1,0 +1,119 @@
+.uppermenu{
+   background-color: aquamarine;
+}
+
+.nav-bar-shadow{
+   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hide-Upper-Menu{
+   display: none;
+   transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
+.body{
+   background-color: azure
+}
+
+a{
+   text-decoration: none !important;
+   color: lightslategray
+}
+
+.hide-lower-at-first{
+   display: none;
+}
+
+.lower-menu-nav-color{
+   background-color: azure
+}
+
+#lower-menu-in-nav{
+   padding-right: 50px;
+   margin-bottom : 0px;
+   padding-bottom: 10px;
+   
+}
+
+ul#lower-menu-in-nav li {
+   display:inline;
+ }
+
+#header{
+   z-index: 100;
+   width: 100%;
+}
+.sticktotop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.banner-image {
+   background-image: url('https://picsum.photos/id/1019/5472/3648');
+   height: 50%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+
+ .lowermenu {
+   width: 80%;
+   margin-left: 10%;
+   background-color: azure;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.lower-menu-item {
+   padding: 10px;
+   color: black !important;
+   font-size: large;
+   font-weight: 600;
+   margin-right: 10px;
+   border-radius: 20px;
+   background-color: white;
+}
+
+.banner-menu{
+   background-color: azure;
+   margin-left: 50px;
+   padding-right:50px;
+}
+
+.banner-menu-list{
+   margin-bottom: 0px;
+   padding-left: 10px;
+   padding-bottom: 2px;
+   font-size: smaller;
+   color: lightslategrey;
+   font-weight: 600;
+}
+
+.brand{
+   margin-right: 50px;
+   margin-left:50px;
+}
+
+.upper-menu-list{
+   padding: 10px;
+   text-transform: uppercase;
+   font-size: smaller;
+}
+
+.lower-menu-list-nav{
+   padding: 10px;
+   font-size: small;
+   font-weight: 700;
+   color: lightslategrey;
+}
+
+#menu {
+   text-align: right;
+   padding-right: 50px;
+   margin-bottom : 0px;
+}
+ul#menu li {
+  display:inline;
+}
