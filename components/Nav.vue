@@ -11,7 +11,7 @@
          </div>
       </transition>
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand brand" href="#">SHOWCASE</a>
+         <a class="navbar-brand brand" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;SHOWCASE</a>
          <div>
             <form class="form-inline ">
                <input class="form-control m-lg-2 " type="search" placeholder="Search" aria-label="Search">
@@ -22,12 +22,12 @@
          <!-- hide-lower-at-first  was used here in class -->
          <div v-show="showLowerMenu" class="lower-menu-nav-color ">
             <ul id="lower-menu-in-nav">
-               <nuxt-link to="/" class="lower-menu-list-nav" style="margin-right:200px;">Category</nuxt-link>
-               <nuxt-link to="/" class="lower-menu-list-nav">Shopping Mall</nuxt-link>
-               <nuxt-link to="/" class="lower-menu-list-nav">Every Collection</nuxt-link>
-               <nuxt-link to="/" class="lower-menu-list-nav">Collections</nuxt-link>
-               <nuxt-link to="/" class="lower-menu-list-nav">Vouchers</nuxt-link>
-               <nuxt-link to="/" class="lower-menu-list-nav">Groceries</nuxt-link>
+               <nuxt-link to="/" class="lower-menu-list-nav" style="margin-right:200px;">Category&nbsp; <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></nuxt-link>
+               <nuxt-link to="/" class="lower-menu-list-nav"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;Shopping Mall</nuxt-link>
+               <nuxt-link to="/" class="lower-menu-list-nav"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Every Collection</nuxt-link>
+               <nuxt-link to="/" class="lower-menu-list-nav"><i class="fa fa-windows" aria-hidden="true"></i>&nbsp;Collections</nuxt-link>
+               <nuxt-link to="/" class="lower-menu-list-nav"><i class="fa fa-ticket" aria-hidden="true"></i>&nbsp;Vouchers</nuxt-link>
+               <nuxt-link to="/" class="lower-menu-list-nav"><i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;Groceries</nuxt-link>
             </ul> 
          </div>
       </transition>

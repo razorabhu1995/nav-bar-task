@@ -16,12 +16,13 @@
             </div>
          </div>
       </div>
+
       <div id="lowerMenuID" class="row lowermenu">
-         <nuxt-link to="/" class="col lower-menu-item">Shopping Mall</nuxt-link>
-         <nuxt-link to="/" class="col lower-menu-item">Every Collection</nuxt-link>
-         <nuxt-link to="/" class="col lower-menu-item">Collections</nuxt-link>
-         <nuxt-link to="/" class="col lower-menu-item">Vouchers</nuxt-link>
-         <nuxt-link to="/" class="col lower-menu-item">Groceries</nuxt-link>
+         <nuxt-link to="/" class="col lower-menu-item"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;Shopping Mall</nuxt-link>
+         <nuxt-link to="/" class="col lower-menu-item"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Every Collection</nuxt-link>
+         <nuxt-link to="/" class="col lower-menu-item"><i class="fa fa-windows" aria-hidden="true"></i>&nbsp;Collections</nuxt-link>
+         <nuxt-link to="/" class="col lower-menu-item"><i class="fa fa-ticket" aria-hidden="true"></i>&nbsp;Vouchers</nuxt-link>
+         <nuxt-link to="/" class="col lower-menu-item"><i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;Groceries</nuxt-link>
       </div>
 
       <div class="row lowermenu">
