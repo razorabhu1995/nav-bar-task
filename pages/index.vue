@@ -113,10 +113,7 @@ export default {
 </script>
 
 <style>
-.hide-Upper-Menu{
-   display: none;
-   transition: visibility 0s linear 0.33s, opacity 0.33s linear;
-}
+
 
 
 </style>

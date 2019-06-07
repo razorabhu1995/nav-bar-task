@@ -114,6 +114,20 @@ ul#lower-menu-in-nav li {
    padding-right: 50px;
    margin-bottom : 0px;
 }
+
 ul#menu li {
   display:inline;
+}
+
+.fade-enter-active, .fade-leave-active {
+   transition: opacity .5s;
+}
+
+.hide-Upper-Menu{
+   display: none;
+   transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
+.fade-enter, .fade-leave-to {
+   opacity: 0;
 }
