@@ -10,14 +10,23 @@
                   </ul>  
          </div>
       </transition>
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <!-- NAV WITH CUSTOM CSS -->
+      <div class="midnav">
+         <a class="brand" href="#home"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;SHOWCASE</a>
+         <input type="text" id="search" v-model="searchContent" placeholder="Search..">
+      </div>
+
+      <!-- NAV WITH BOOTSTRAP COMMENTED OUT -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <a class="navbar-brand brand" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;SHOWCASE</a>
          <div>
             <form class="form-inline ">
                <input class="form-control m-lg-2 " type="search" placeholder="Search" aria-label="Search">
             </form>
          </div>
-      </nav>
+      </nav> -->
+
       <transition name="fade">
          <!-- hide-lower-at-first  was used here in class -->
          <div v-show="showLowerMenu" class="lower-menu-nav-color ">
@@ -38,6 +47,7 @@
 export default {
    data(){
       return{
+         searchContent : ""
       }
    },
    props : {
